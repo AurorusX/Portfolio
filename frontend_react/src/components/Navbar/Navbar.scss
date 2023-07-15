@@ -23,6 +23,7 @@
     img {
       width: 90px;
       height: 20px;
+      transform: scale(1.6);
   
       @media screen and (min-width: 2000px) {
         width: 180px;
