@@ -4,7 +4,9 @@ import {motion} from 'framer-motion';
 import './About.scss';
 import { images } from '../../constants';
 
-import { urlFor,client } from '../../client';
+import { client, UrlFor } from '../../client';
+
+import { AppWrap } from '../../wrapper';
 
 // const abouts=[
 //   {
@@ -39,7 +41,7 @@ const About = () => {
   const [abouts, setAbouts] = useState([]);
  
   useEffect(() => {  
-    const query = '*[__type == "abouts"]';
+    const query = '*[_type == "abouts"]';
 
     client.fetch(query).then((data)=>setAbouts(data))
     
@@ -61,7 +63,7 @@ const About = () => {
         className='app__profile-item'
         key={about.title +index}
         >
-          <img src='about.imgUrl' />
+          <img src={UrlFor(about.imgUrl)} alt={about.name}/>
           <h2 className='bold-text' style={{marginTop:20}}>
             {about.title}
           </h2>
@@ -82,4 +84,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AppWrap(About, 'about');
