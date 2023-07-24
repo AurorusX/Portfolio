@@ -16,6 +16,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scripts": "^5.0.1",
+    "react-tooltip": "^5.18.1",
     "web-vitals": "^3.3.2"
   },
   "scripts": {
@@ -23,8 +24,6 @@
     "build": "set SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-
-  
   },
   "eslintConfig": {
     "extends": [
