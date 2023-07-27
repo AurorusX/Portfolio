@@ -3,6 +3,7 @@ import {AiFillEye,AiFillGithub} from 'react-icons/ai';
 import {delay, motion} from 'framer-motion';
 
 import AppWrap from '../../wrapper/AppWrap';
+import MotionWrap from '../../wrapper/MotionWrap';
 import {UrlFor,client} from '../../client';
 
 import './Work.scss'
@@ -150,4 +151,8 @@ const Work = () => {
 
 }
 
-export default AppWrap(Work,'work');
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  "app__primarybg"
+  );
