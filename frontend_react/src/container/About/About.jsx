@@ -8,33 +8,7 @@ import { client, UrlFor } from '../../client';
 
 import { AppWrap,MotionWrap } from '../../wrapper';
 
-// const abouts=[
-//   {
-//     title:'Backend Development',
-//     description : 'Python Frameworks , .NET, Node.js ',
-//     imgUrl:''
-//   },
-//   {
-//     title:'Databases',
-//     description : 'Mongo Db , SQL Server ',
-//     imgUrl:''
-//   },
-//   {
-//     title:'DevOps',
-//     description : 'Docker and Kubernetes',
-//     imgUrl:''
-//   },
-//   {
-//     title:'Frontend Developement / Mobile',
-//     description : 'React.js & Tailwind CSS, React Native',
-//     imgUrl:''
-//   },
-//   {
-//     title:'Web 3',
-//     description : 'Solidity, Web3.js, Ethers.js',
-//     imgUrl:''
-//   }
-// ];
+
 
 const About = () => {
   

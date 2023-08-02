@@ -2,7 +2,6 @@ import React from 'react';
 import {motion} from 'framer-motion';
 
 
-import React from 'react'
 
 const MotionWrap = (Component,classNames) => function HOC(){
   return (
@@ -12,8 +11,11 @@ const MotionWrap = (Component,classNames) => function HOC(){
     className={`${classNames} app__flex`}
     
     >
-        MotionWrap</motion.div>
-  )
-}
+       <Component/>
+        
+        
+        </motion.div>
+  );
+};
 
-export default MotionWrap
+export default MotionWrap;
